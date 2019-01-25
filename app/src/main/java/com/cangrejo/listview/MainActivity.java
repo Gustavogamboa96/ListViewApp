@@ -43,9 +43,13 @@ public class MainActivity extends AppCompatActivity {
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                //String mynames = names[position];
-               if(position == 2){
+               if(position == 0){
                    startActivity(new Intent(MainActivity.this, FirstItemActivity.class));
-                    overridePendingTransition(R.anim.leftright, R.anim.leftright);
+                   overridePendingTransition(R.anim.leftright, R.anim.leftright);
+               }
+               if(position == 1){
+                   startActivity(new Intent(MainActivity.this, SecondItemActivity.class));
+                   overridePendingTransition(R.anim.leftright, R.anim.leftright);
                }
            }
        });

@@ -22,16 +22,16 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 import java.io.File;
 
-public class ThirdItemActivity extends YouTubeBaseActivity {
+public class TenthItemActivity extends YouTubeBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.third_item);
+        setContentView(R.layout.tenth_item);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
-        toolbar.setTitle("Generalidades de imagenología");
+        toolbar.setTitle("Sindrome compartimental");
         toolbar.setTitleTextColor(Color.WHITE);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +48,7 @@ public class ThirdItemActivity extends YouTubeBaseActivity {
         webview.requestFocusFromTouch();
         webview.setWebViewClient(new WebViewClient());
         webview.setWebChromeClient(new WebChromeClient());
-        webview.loadUrl("https://docs.google.com/document/d/e/2PACX-1vRf8HwiM0NM1bGh9JA2pY87sGN_3zB1mvxUnH9Kr0-yQP9_AII88xszwFS8_58MM8hJEiDy1ixjaQRx/pub");
+        webview.loadUrl("https://docs.google.com/document/d/e/2PACX-1vQrOuEXS4WPgz6gdR8cu0yZBMMk9D-5dQGpcTRm-a5LN1u_K5VB5TpN-98au0mHUK--ExjnzzapZTnk/pub");
 
 
 

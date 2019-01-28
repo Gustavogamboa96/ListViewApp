@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
                    startActivity(new Intent(MainActivity.this, FourthItemActivity.class));
                    overridePendingTransition(R.anim.leftright, R.anim.leftright);
                }
+               if(position == 9){
+                   startActivity(new Intent(MainActivity.this, TenthItemActivity.class));
+                   overridePendingTransition(R.anim.leftright, R.anim.leftright);
+               }
            }
        });
 

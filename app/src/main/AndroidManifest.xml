@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TenthItemActivity"></activity>
         <activity android:name=".SecondItemActivity" />
         <activity
             android:name=".FirstItemActivity"
@@ -24,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ThirdItemActivity" />
-        <activity android:name=".FourthItemActivity"></activity>
+        <activity android:name=".FourthItemActivity" />
     </application>
 
 </manifest>

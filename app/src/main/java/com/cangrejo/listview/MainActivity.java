@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
        ListView listView=(ListView)findViewById(R.id.listView);
 
-       final String[] Names = {"1.Examen físico", "2.Generalidades de fracturas", "3.Generalidades en imagenologia ortopedica", "4.Semilogia de hombro", "5.Semilogia de cadera","6.Semiologia de rodilla","7.Semiologia de pie y tobillo","8.Luxaciones","9.Fracturas abiertas","10.Sindrome compartimental", "11.Inmovilizaciones"};
+       final String[] Names = {"1.Examen físico", "2.Generalidades de fracturas", "3.Generalidades en imagenología ortopédica", "4.Semilogía de hombro", "5.Semilogía de cadera","6.Semiología de rodilla","7.Semiología de pie y tobillo","8.Luxaciones","9.Fracturas abiertas","10.Síndrome compartimental", "11.Inmovilizaciones"};
        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Names){
            public View getView(int position, View convertView, ViewGroup parent){
                /// Get the Item from ListView
@@ -61,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
                }
                if(position == 9){
                    startActivity(new Intent(MainActivity.this, TenthItemActivity.class));
+                   overridePendingTransition(R.anim.leftright, R.anim.leftright);
+               }
+               if(position == 10){
+                   startActivity(new Intent(MainActivity.this, EleventhItemActivity.class));
                    overridePendingTransition(R.anim.leftright, R.anim.leftright);
                }
            }

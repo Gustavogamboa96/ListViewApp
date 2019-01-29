@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TenthItemActivity"></activity>
+        <activity android:name=".EleventhItemActivity"></activity>
+        <activity android:name=".TenthItemActivity" />
         <activity android:name=".SecondItemActivity" />
         <activity
             android:name=".FirstItemActivity"
